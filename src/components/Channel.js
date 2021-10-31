@@ -42,6 +42,10 @@ const Channel = ({ user = null }) => {
         displayName,
         photoURL,
       });
+    // audio tone after message send
+      var audio = new Audio('tone.mp3');
+       audio.play();
+      
       // Clear input field
       setNewMessage('');
       // Scroll down to the bottom of the list
